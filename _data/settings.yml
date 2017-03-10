@@ -1,0 +1,14 @@
+# Site Settings
+lang: 'en'
+author: 
+title: 
+subtitle: 
+description: 
+keywords: ''
+
+# Site Content
+socials:
+- {name: linkedin, link: 'http://linkedin.com/in/germanfuentescapella'}
+- {name: github, link: 'https://github.com/germfue'}
+- {name: rss, link: 'http://feed.xml/'}
+- {name: pgp, link: 'http://pgp.mit.edu/pks/lookup?op=vindex&search=0xAC7ABB37BF75CA8B534FA2ADDEF46152A00CA7DD'}

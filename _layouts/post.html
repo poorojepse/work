@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section id='post'>
+   <div class='post-container'>
+      <article class='wrapper post'>
+         <header class='header'>
+            <h1 class='title gigantic'>{{page.title}}</h1>
+            <span class='date'>{{ page.date | date: '%b %-d, %Y' }}</span>
+         </header>
+         <section class='body'>
+         {{content}}
+         </section>
+      </article>   
+      
+      <section class='wrapper tags'>
+         <header class='header'>
+            <h3 class='title'>{% include icons/tags.html %}Tags</h3>
+         </header>
+         <ul class='body'>
+         {% for tags in page.tags %}
+            {% include gen-tag.html tag=tags %}
+         {% endfor %}
+         </ul>
+      </section>      
+   </div>
+</section>

@@ -1,0 +1,8 @@
+<section id='nav'>
+   <div class='nav-container'>
+      <nav class='nav-flex'>
+         <a class='nav-item home' href='{{ site.url }}{{ site.baseurl }}'>{% include icons/home.html %}</a>
+         <a class='nav-item blog {% if page.url contains page.title %}current{% endif %}' href='{{site.baseurl}}/blog'>Blog</a>
+      </nav>
+   </div>
+</section>
