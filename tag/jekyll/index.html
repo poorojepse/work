@@ -1,0 +1,28 @@
+---
+layout: default
+tag: jekyll
+---
+
+<section id='blog'>
+   <div class='blog-container'>
+      <section class='wrapper articles'>
+         <header class='header'>
+            <h3 class='title'>Posts Tagged “{{page.tag}}”</h3>
+         </header>
+         <section class='body'>
+           {% for post in site.posts %}
+           {% for tag in post.tags %}
+           {% if tag == page.tag %}
+            <a href='{{site.baseurl}}{{post.url}}'>
+               <article class='article'>
+                  <h4 class='title'>{{post.title}}</h4>
+                  <span class='date'>{{ post.date | date: '%b %-d, %Y' }}</span>
+               </article>
+            </a>
+           {% endif %}
+           {% endfor %}
+           {% endfor %}        
+         </section>
+      </section>    
+   </div>
+</section>

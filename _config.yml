@@ -1,0 +1,16 @@
+markdown: kramdown
+permalink: pretty
+baseurl: '/work'
+
+title: 'Germán Fuentes Capella'
+
+paginate: 5
+paginate_path: "/page:num/"
+
+safe: false
+gems: [jekyll-paginate]
+
+collections:
+ posts:
+  output: true
+  permalink: /blog/:title
